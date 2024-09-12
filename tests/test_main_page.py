@@ -26,7 +26,7 @@ class TestMainPage:
     @allure.tag('web')
     @allure.severity(Severity.NORMAL)
     @allure.label('owner', 'Vadim Korolev')
-    def test_change_language(self):
+    def test_change_city(self):
         main_page.open_main_page()
 
         main_page.click_on_list_of_cities()

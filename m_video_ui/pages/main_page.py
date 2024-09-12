@@ -17,15 +17,15 @@ class MainPage:
 
     def choose_city(self, city):
         with allure.step(f'Выбрать город "{city}".'):
-            browser.element('.location-select__location').element_by(have.text(city)).click()
+            browser.element('.location-select__location').element(have.text(city)).click()
 
     def check_tab_title(self):
         with allure.step('Проверить названия вкладки.'):
-            browser.element('.c-breadcrumbs__item').should(have.exact_text(("М.Club — максимум  для своих")))
+            browser.element('.c-breadcrumbs__item').second.should(have.exact_text(("М.Club — максимум  для своих")))
 
     def check_city_tab_title(self, city):
         with allure.step(f'Проверить названия города "{city}".'):
-            browser.element('.location-text').element_by(have.text(city)).click()
+            browser.element('.location-text').element(have.text(city)).click()
 
 
 main_page = MainPage()
