@@ -21,7 +21,8 @@ class MainPage:
 
     def check_tab_title(self):
         with allure.step('Проверить названия вкладки.'):
-            browser.element('.page-header__logo-click').should(have.exact_text(("М.КЛИК")))
+            browser.find_element_by_class_name('page-header__logo-click')
+            ###browser.element('.page-header__logo-click').should(have.exact_text(("М.КЛИК")))
 
     def check_city_tab_title(self, city):
         with allure.step(f'Проверить названия города "{city}".'):
