@@ -9,7 +9,7 @@ class CartPage:
 
     def move_to_cart(self):
         with allure.step('Перейти в корзину.'):
-            browser.element('.mv-main-button--content').element(have.text('В корзину')).click()
+            browser.element('.title').element(have.text('Корзина')).click()
 
     def remove_product_from_cart(self):
         with allure.step('Удалить продукт из корзины.'):
