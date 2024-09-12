@@ -1,10 +1,10 @@
 # Проект по тестированию интернет-магазина <a target="_blank" href="https://www.mvideo.ru/">М.Видео</a>
 
-![main page screenshot](pictures/steam_main_page.png)
+![main page screenshot](главная)
 
 ---
 ### Список проверок, реализованных в web автотестах
-1. Переход на вкладку "M.Club".
+1. Переход на вкладку "Установка и ремонт".
 2. Смена города на Санкт-Петербург.
 3. Поиск указанного продукта.
 4. Переход на страницу авторизации.
@@ -20,12 +20,12 @@
 ---
 
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Steam_UI/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/M_Video/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Vadim_Korolev_Steam_UI/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/M_Video/)
 
-![jenkins job main page](pictures/Jenkins_job_main_page.png)
+![jenkins job main page](дженкинс)
 
 2. Нажать "**Build Now**".
 
@@ -34,42 +34,42 @@
 ### Allure отчет
 
 ### Общие результаты
-![allure_report main page](pictures/allure_report_main_page.png)
+![allure_report main page](аллюр)
 
 ### Результаты прохождения тестов
-![allure_report suites](pictures/allure_report_suites.png)
+![allure_report suites](тесты)
 
 ### Графики
-![allure_report graph_1](pictures/allure_report_graph_1.png)
-![allure_report graph_2](pictures/allure_report_graph_2.png)
+![allure_report graph_1](графики1)
+![allure_report graph_2](графики2)
 
 ---
 
 ### Интеграция с Allure TestOps
-> [Дашборд с общими результатами](https://allure.autotests.cloud/project/4223/dashboards)
+> [Дашборд с общими результатами](https://allure.autotests.cloud/project/4434/dashboards)
 
-![allure_testops dashboard](pictures/allure_testops_dashboard.png)
+![allure_testops dashboard](дашборд)
 
-> [Тест-кейсы](https://allure.autotests.cloud/project/4223/dashboards)
+> [Тест-кейсы](https://allure.autotests.cloud/project/4434/test-cases?treeId=0)
 
-![allure_testops test_cases](pictures/allure_testops_test_cases.png)
+![allure_testops test_cases](кейсы)
 
 ---
 
 ### Интеграция с Jira
-> [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1234)
+> [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1331)
  
-![jira task](pictures/jira_task.png)
+![jira task](жира)
 
 ---
 
 
 ### Уведомления в Телеграм
 
-![telegram_notification](pictures/tg_notification.png)
+![telegram_notification](тг)
 
 ---
 
 ### Прохождение автотеста
 
-![autotest](pictures/clear_cart.gif)
+![autotest](гифка)
