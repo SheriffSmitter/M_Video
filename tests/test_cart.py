@@ -56,9 +56,9 @@ class TestCart:
         search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
         search_page.click_on_search()
-        search_page.find_game_in_search(product_name="Iphone 14 pro max")
-        search_page.click_on_first_game_in_search_row()
-        cart_page.add_game_to_cart()
+        search_page.find_product_in_search(product_name="Iphone 14 pro max")
+        search_page.click_on_first_product_in_search_row()
+        cart_page.add_product_to_cart()
         cart_page.move_to_cart()
         cart_page.clear_cart()
 
