@@ -1,4 +1,4 @@
-# Проект по тестированию интернет-магазина <a target="_blank" href="https://store.steampowered.com/">Steam</a>
+# Проект по тестированию интернет-магазина <a target="_blank" href="https://www.mvideo.ru/">М.Видео</a>
 
 ![main page screenshot](pictures/steam_main_page.png)
 
