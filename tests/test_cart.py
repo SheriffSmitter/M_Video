@@ -1,5 +1,4 @@
 import allure
-import time
 from allure_commons.types import Severity
 
 from m_video_ui.pages.main_page import main_page
@@ -25,7 +24,7 @@ class TestCart:
         cart_page.add_product_to_cart()
         cart_page.move_to_cart()
 
-        cart_page.check_product_in_cart(product_name="Iphone 15 pro max")
+        cart_page.check_product_in_cart(product_name="Iphone")
 
     @allure.title('Remove product from the cart')
     @allure.story('Remove product')
@@ -37,15 +36,10 @@ class TestCart:
 
         search_page.click_on_search()
         search_page.find_product_in_search(product_name="Iphone 15 pro max")
-        time.sleep(5)
-        search_page.click_on_first_product_in_search_row()
-        time.sleep(5)
+        #search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
-        time.sleep(5)
         cart_page.move_to_cart()
-        time.sleep(5)
         cart_page.remove_product_from_cart()
-        time.sleep(5)
 
         cart_page.check_empty_cart()
 
@@ -59,20 +53,13 @@ class TestCart:
 
         search_page.click_on_search()
         search_page.find_product_in_search(product_name="Iphone")
-        time.sleep(5)
-        search_page.click_on_first_product_in_search_row()
-        time.sleep(5)
+        #search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
-        time.sleep(5)
         search_page.click_on_search()
         search_page.find_product_in_search(product_name="15 pro max")
-        time.sleep(5)
-        search_page.click_on_first_product_in_search_row()
-        time.sleep(5)
+        #search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
-        time.sleep(5)
         cart_page.move_to_cart()
-        time.sleep(5)
         cart_page.clear_cart()
 
         cart_page.check_empty_cart()
