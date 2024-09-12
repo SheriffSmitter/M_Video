@@ -9,7 +9,7 @@ from m_video_ui.pages.main_page import main_page
 @allure.link('https://www.mvideo.ru/', name='M.Video')
 class TestMainPage:
 
-    @allure.title('Switch on tab "Блог «М.Клик»"')
+    @allure.title('Switch on tab "Установка и ремонт»"')
     @allure.story('Tabs')
     @allure.tag('web')
     @allure.severity(Severity.CRITICAL)

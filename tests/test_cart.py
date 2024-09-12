@@ -52,11 +52,11 @@ class TestCart:
         main_page.open_main_page()
 
         search_page.click_on_search()
-        search_page.find_product_in_search(product_name="Iphone 15 pro max")
+        search_page.find_product_in_search(product_name="Iphone 15")
         search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
         search_page.click_on_search()
-        search_page.find_product_in_search(product_name="Iphone 14 pro max")
+        search_page.find_product_in_search(product_name="Iphone 15 pro max")
         search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
         cart_page.move_to_cart()
