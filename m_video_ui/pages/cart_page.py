@@ -13,7 +13,7 @@ class CartPage:
 
     def remove_product_from_cart(self):
         with allure.step('Удалить продукт из корзины.'):
-            browser.all('[type="button"]').element_by(have.text('Удалить')).click()
+            browser.all('[type="button"]').element(have.text('Удалить')).click()
 
     def clear_cart(self):
         with allure.step('Очистить корзину.'):
