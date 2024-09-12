@@ -20,5 +20,5 @@ class TestSearch:
         search_page.click_on_search()
         search_page.find_product_in_search(product_name="Dyson")
         with (allure.step('Проверить, что загрузилась страница Dyson.')):
-            browser.element('.m-banner__title').first.should(
+            browser.element('.m-banner__title').should(
                 have.text("Откройте для себя устройства для ухода за волосами"))

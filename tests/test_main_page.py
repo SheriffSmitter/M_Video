@@ -9,7 +9,7 @@ from m_video_ui.pages.main_page import main_page
 @allure.link('https://www.mvideo.ru/', name='M.Video')
 class TestMainPage:
 
-    @allure.title('Switch on tab "M.Club"')
+    @allure.title('Switch on tab "Блог «М.Клик»"')
     @allure.story('Tabs')
     @allure.tag('web')
     @allure.severity(Severity.CRITICAL)
@@ -17,7 +17,7 @@ class TestMainPage:
     def test_switch_tab(self):
         main_page.open_main_page()
 
-        main_page.switch_navigation_tab(tab_name='M.Club')
+        main_page.switch_navigation_tab(tab_name='Блог «М.Клик»')
 
         main_page.check_tab_title()
 
