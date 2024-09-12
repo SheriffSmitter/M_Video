@@ -17,7 +17,7 @@ class TestMainPage:
     def test_switch_tab(self):
         main_page.open_main_page()
 
-        main_page.switch_navigation_tab(tab_name='Блог «М.Клик»')
+        main_page.switch_navigation_tab(tab_name='Установка и ремонт')
 
         main_page.check_tab_title()
 
