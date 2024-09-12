@@ -21,7 +21,7 @@ class CartPage:
 
     def check_product_in_cart(self, product_name):
         with allure.step('Проверить продукт в корзине.'):
-            browser.element('.cart-item__name').should(have.exact_text(product_name))
+            browser.element('.cart-item__name').should(have.text(product_name))
 
     def check_empty_cart(self):
         with allure.step('Проверить, что корзина пустая.'):

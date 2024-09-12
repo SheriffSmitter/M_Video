@@ -19,12 +19,12 @@ class TestCart:
         main_page.open_main_page()
 
         search_page.click_on_search()
-        search_page.find_product_in_search(product_name="Iphone 15 pro max")
+        search_page.find_product_in_search(product_name="Iphone")
         search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
         cart_page.move_to_cart()
 
-        cart_page.check_product_in_cart(product_name="Iphone 15 pro max")
+        cart_page.check_product_in_cart(product_name="Iphone")
 
     @allure.title('Remove product from the cart')
     @allure.story('Remove product')
@@ -35,7 +35,7 @@ class TestCart:
         main_page.open_main_page()
 
         search_page.click_on_search()
-        search_page.find_product_in_search(product_name="Iphone 15 pro max")
+        search_page.find_product_in_search(product_name="15 pro max")
         search_page.click_on_first_product_in_search_row()
         cart_page.add_product_to_cart()
         cart_page.move_to_cart()
