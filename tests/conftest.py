@@ -18,8 +18,8 @@ def load_env():
 def browser_management():
     options = Options()
     selenoid_capabilities = {
-        "browserName": "chrome",
-        "browserVersion": "122.0",
+        "browserName": "firefox",
+        "browserVersion": "130.0",
         "selenoid:options": {
             "enableVNC": True,
             "enableVideo": True
@@ -35,6 +35,9 @@ def browser_management():
     )
 
     browser.config.driver = driver
+    browser.config.driver_name = 'firefox'
+    driver_options = webdriver.FirefoxOptions()
+    driver_options.page_load_strategy = "eager"
     browser.config.base_url = 'https://www.mvideo.ru/'
     browser.config.window_height = 1080
     browser.config.window_width = 1920
