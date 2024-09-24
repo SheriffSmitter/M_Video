@@ -30,10 +30,10 @@ def browser_management():
 
     #login = os.getenv('SELENOID_LOGIN')
     #password = os.getenv('SELENOID_PASS')
-    #driver = webdriver.Remote(
-        #command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
-        #options=options
-    #)
+    driver = webdriver.Remote(
+        command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
+        options=options
+    )
 
     browser.config.driver = driver
     browser.config.base_url = 'https://www.regard.ru/'
