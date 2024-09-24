@@ -1,13 +1,13 @@
 import allure
 from allure_commons.types import Severity
 
-from m_video_ui.pages.main_page import main_page
-from m_video_ui.pages.login_page import login_page
+from regard_ui.pages.main_page import main_page
+from regard_ui.pages.login_page import login_page
 
 
 @allure.epic('Login page')
 @allure.feature('Elements on login page')
-@allure.link('https://www.mvideo.ru/', name='M.Video')
+@allure.link('https://www.regard.ru/', name='Regard')
 class TestLoginPage:
     @allure.title('Open login page')
     @allure.story('Login button')

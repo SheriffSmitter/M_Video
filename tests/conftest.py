@@ -1,4 +1,5 @@
 import os
+from lib2to3.pgen2 import driver
 
 import pytest
 from dotenv import load_dotenv
@@ -6,7 +7,7 @@ from selenium.webdriver.chrome.options import Options
 from selenium import webdriver
 from selene import browser
 
-from m_video_ui.utils import attach
+from regard_ui.utils import attach
 
 
 @pytest.fixture(scope="session", autouse=True)
@@ -27,15 +28,15 @@ def browser_management():
     }
     options.capabilities.update(selenoid_capabilities)
 
-    login = os.getenv('SELENOID_LOGIN')
-    password = os.getenv('SELENOID_PASS')
-    driver = webdriver.Remote(
-        command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
-        options=options
-    )
+    #login = os.getenv('SELENOID_LOGIN')
+    #password = os.getenv('SELENOID_PASS')
+    #driver = webdriver.Remote(
+        #command_executor=f'https://{login}:{password}@selenoid.autotests.cloud/wd/hub',
+        #options=options
+    #)
 
     browser.config.driver = driver
-    browser.config.base_url = 'https://www.mvideo.ru/'
+    browser.config.base_url = 'https://www.regard.ru/'
     browser.config.window_height = 1080
     browser.config.window_width = 1920
 

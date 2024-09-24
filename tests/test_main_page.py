@@ -1,12 +1,12 @@
 import allure
 from allure_commons.types import Severity
 
-from m_video_ui.pages.main_page import main_page
+from regard_ui.pages.main_page import main_page
 
 
 @allure.feature('Elements on main page')
 @allure.epic('Main page')
-@allure.link('https://www.mvideo.ru/', name='M.Video')
+@allure.link('https://www.regard.ru/', name='Regard')
 class TestMainPage:
 
     @allure.title('Switch on tab "Установка и ремонт»"')
@@ -17,7 +17,7 @@ class TestMainPage:
     def test_switch_tab(self):
         main_page.open_main_page()
 
-        main_page.switch_navigation_tab(tab_name='Установка и ремонт')
+        main_page.switch_navigation_tab(tab_name='О компании')
 
         main_page.check_tab_title()
 
