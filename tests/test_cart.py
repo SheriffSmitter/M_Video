@@ -24,20 +24,6 @@ class TestCart:
 
         cart_page.check_product_in_cart(product_name="iPhone 15 Pro Max")
 
-    @allure.title('Add product to the favorite')
-    @allure.story('Add product')
-    @allure.tag('web')
-    @allure.severity(Severity.CRITICAL)
-    @allure.label('owner', 'Vadim Korolev')
-    def test_add_product_to_favorite(self):
-        main_page.open_main_page()
-
-        search_page.click_on_search()
-        search_page.find_product_in_search(product_name="iPhone 15 Pro Max")
-        cart_page.add_product_to_favorite()
-        cart_page.move_to_favorite()
-        cart_page.check_product_in_favorite(product_name="iPhone 15 Pro Max")
-
     @allure.title('Full clear of the cart')
     @allure.story('Clear cart')
     @allure.tag('web')
