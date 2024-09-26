@@ -31,5 +31,6 @@ class TestMainPage:
     def test_change_city(self):
         main_page.open_main_page()
         main_page.click_on_list_of_cities()
+        time.sleep(2)
         main_page.choose_city(city="Санкт-Петербург")
         main_page.check_city_tab_title(city="Санкт-Петербург")
