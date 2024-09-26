@@ -25,7 +25,7 @@ class MainPage:
 
     def check_city_tab_title(self, city):
         with allure.step(f'Проверить названия города "{city}".'):
-            browser.element('.CityChooser_text__CFbN5').should(have.text("Санкт-Петербург"))
+            browser.element('.CityChooser_text__CFbN5').should(have.text(city))
 
 
 main_page = MainPage()
