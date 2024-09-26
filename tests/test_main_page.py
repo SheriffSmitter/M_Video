@@ -11,7 +11,7 @@ from regard_ui.pages.main_page import main_page
 @allure.link('https://www.regard.ru/', name='Regard')
 class TestMainPage:
 
-    @allure.title('Switch on tab "Установка и ремонт»"')
+    @allure.title('Switch on tab "О компании»"')
     @allure.story('Tabs')
     @allure.tag('web')
     @allure.severity(Severity.CRITICAL)
