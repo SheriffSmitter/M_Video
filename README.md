@@ -1,6 +1,6 @@
-# Проект по тестированию интернет-магазина <a target="_blank" href="https://www.mvideo.ru/">М.Видео</a>
+# Проект по тестированию интернет-магазина <a target="_blank" href="https://www.regard.ru/">Regard</a>
 
-![main page screenshot](главная)
+![main page screenshot](pictures/regard_main_page.png)
 
 ---
 ### Список проверок, реализованных в web автотестах
@@ -20,12 +20,12 @@
 ---
 
 ### Запуск автотестов осуществляется с использованием Jenkins
-> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/M_Video/)
+> [Ссылка на сборку в Jenkins](https://jenkins.autotests.cloud/job/Regard/)
 
 #### Для запуска автотестов в Jenkins
-1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/M_Video/)
+1. Открыть [задачу в Jenkins](https://jenkins.autotests.cloud/job/Regard/)
 
-![jenkins job main page](дженкинс)
+![jenkins job main page](pictures/Jenkins_job_main_page.png)
 
 2. Нажать "**Build Now**".
 
@@ -34,42 +34,42 @@
 ### Allure отчет
 
 ### Общие результаты
-![allure_report main page](аллюр)
+![allure_report main page](pictures/allure_report_main_page.png)
 
 ### Результаты прохождения тестов
-![allure_report suites](тесты)
+![allure_report suites](pictures/allure_report_suites.png)
 
 ### Графики
-![allure_report graph_1](графики1)
-![allure_report graph_2](графики2)
+![allure_report graph_1](pictures/allure_report_graph_1.png)
+![allure_report graph_2](pictures/allure_report_graph_2.png)
 
 ---
 
 ### Интеграция с Allure TestOps
 > [Дашборд с общими результатами](https://allure.autotests.cloud/project/4434/dashboards)
 
-![allure_testops dashboard](дашборд)
+![allure_testops dashboard](pictures/allure_testops_dashboard.png)
 
 > [Тест-кейсы](https://allure.autotests.cloud/project/4434/test-cases?treeId=0)
 
-![allure_testops test_cases](кейсы)
+![allure_testops test_cases](pictures/allure_testops_test_cases.png)
 
 ---
 
 ### Интеграция с Jira
-> [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1331)
+> [Задача в Jira](https://jira.autotests.cloud/browse/HOMEWORK-1354)
  
-![jira task](жира)
+![jira task](pictures/jira_task.png)
 
 ---
 
 
 ### Уведомления в Телеграм
 
-![telegram_notification](тг)
+![telegram_notification](pictures/tg_notification.png)
 
 ---
 
 ### Прохождение автотеста
 
-![autotest](гифка)
+![autotest](pictures/clear_cart.gif)
