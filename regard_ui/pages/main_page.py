@@ -17,7 +17,7 @@ class MainPage:
 
     def choose_city(self, city):
         with allure.step(f'Выбрать город "{city}".'):
-            browser.element('.TownsList_townItem__okfVh').element(have.data-name(city)).click()
+            browser.element(f'form [data-name={city}]').click()
 
     def check_tab_title(self):
         with allure.step('Проверить названия вкладки.'):
@@ -25,7 +25,7 @@ class MainPage:
 
     def check_city_tab_title(self, city):
         with allure.step(f'Проверить названия города "{city}".'):
-            browser.element('.location-text').element(have.text(city))
+            browser.element('.CityChooser_text__CFbN5').should(have.text(city))
 
 
 main_page = MainPage()

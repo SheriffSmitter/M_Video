@@ -13,7 +13,7 @@ class SearchPage:
 
     def click_on_first_product_in_search_row(self):
         with allure.step('Кликнуть на первый результат поиска.'):
-            browser.all('.CardText_listing__6mqXC').first.click()
+            browser.all('.CardText_listing__6mqXC').second.click()
 
     def check_search_result(self, product_name):
         with allure.step(f'Проверить, что была найден продукт "{product_name}".'):

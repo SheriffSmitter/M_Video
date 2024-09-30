@@ -1,3 +1,5 @@
+import time
+
 import allure
 from allure_commons.types import Severity
 
@@ -9,7 +11,7 @@ from regard_ui.pages.main_page import main_page
 @allure.link('https://www.regard.ru/', name='Regard')
 class TestMainPage:
 
-    @allure.title('Switch on tab "Установка и ремонт»"')
+    @allure.title('Switch on tab "О компании»"')
     @allure.story('Tabs')
     @allure.tag('web')
     @allure.severity(Severity.CRITICAL)
@@ -28,8 +30,7 @@ class TestMainPage:
     @allure.label('owner', 'Vadim Korolev')
     def test_change_city(self):
         main_page.open_main_page()
-
         main_page.click_on_list_of_cities()
+        time.sleep(2)
         main_page.choose_city(city="Санкт-Петербург")
-
-        main_page.check_city_tab_title()
+        main_page.check_city_tab_title(city="Санкт-Петербург")
